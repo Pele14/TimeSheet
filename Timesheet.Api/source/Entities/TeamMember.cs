@@ -4,22 +4,22 @@ namespace Timesheet.Api.source.Entities
     {
         public Guid Id { get; set; }
 
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
-        public string Username { get; set; }
+        public required string Username { get; set; }
 
-        public string Email { get; set; }
+        public required string Email { get; set; }
 
-        public string PasswordHash { get; set; }
+        public required string PasswordHash { get; set; }
 
-        public double hoursPerWeek { get; set; }
+        public double HoursPerWeek { get; set; }
 
         public Role Role { get; set; }
 
         public MemberStatus Status { get; set; }
 
-        public Icollection<Project> Projects { get; set; } = new List<Project>();
+        public ICollection<Project> Projects { get; set; } = new List<Project>();
 
-        public Icollection<TimeEntry> TimeEntries { get; set; } = new List<TimeEntry>();
+        public ICollection<TimeEntry> TimeEntries { get; set; } = new List<TimeEntry>();
 }
 }

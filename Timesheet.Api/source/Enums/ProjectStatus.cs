@@ -1,4 +1,4 @@
-enum ProjectStatus
+public enum ProjectStatus
 {
     Active = 1,
     Inactive = 2,

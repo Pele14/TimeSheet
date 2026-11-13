@@ -16,7 +16,7 @@ namespace Timesheet.Api.source.Data
         public DbSet<TeamMember> TeamMembers { get; set; }
         public DbSet<TimeEntry> TimeEntries { get; set; }
 
-        public override void OnModelCreating(ModelBuilder modelBuilder)
+       /* public override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
@@ -43,7 +43,6 @@ namespace Timesheet.Api.source.Data
             modelBuilder.Entity<Country>()
                 .HasMany(c => c.Clients)
                 .WithOne(cl => cl.Country)
-                .HasForeignKey(cl => cl.CountryId);
+                .HasForeignKey(cl => cl.CountryId);*/
         }
     }
-}
